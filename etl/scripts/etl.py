@@ -5,6 +5,7 @@ import requests as req
 import pandas as pd
 import numpy as np
 import parse
+import re
 
 from io import BytesIO
 from decimal import Decimal
@@ -107,6 +108,9 @@ def serve_datapoints(datapoints, concept_map, csv_dict):
         if df[concept].dtype == 'object':
             try:
                 df[concept] = df[concept].map(parse_number).map(format_float_digits)
+            except ValueError:
+                #TODO should look at the concept type
+                df[concept] = df[concept].map(lambda v: v.strip())
             except AttributeError:
                 print("can't convert the column to numbers. Maybe it contains non-numeric values?")
                 raise
@@ -131,6 +135,8 @@ def serve_concepts(concepts, entities_columns):
     cdf1 = concepts.copy()
     cdf1 = cdf1.rename(columns={'concept_id': 'concept', 'topic': 'tags'})
     cdf1 = cdf1.set_index('concept')
+    # trim descriptions
+    # cdf1['description'] = cdf1['description'].map(lambda v: re.sub(r'\s+', ' ', v).strip())
 
     # second, entity concepts
     geo_concepts = ['geo', 'country', 'world_4region', 'global', 'g77_and_oecd_countries',

@@ -7,7 +7,7 @@
     "description": "",
     "author": "",
     "license": "",
-    "created": "2019-11-28T09:58:32.304254+00:00",
+    "created": "2019-11-28T16:24:17.361426+00:00",
     "resources": [
         {
             "name": "ddf--concepts",
@@ -358,6 +358,27 @@
             }
         },
         {
+            "name": "ddf--datapoints--cliberities_fh--by--country--time",
+            "path": "ddf--datapoints--cliberities_fh--by--country--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "cliberities_fh"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--cliberties_idea--by--country--time",
             "path": "ddf--datapoints--cliberties_idea--by--country--time.csv",
             "schema": {
@@ -547,6 +568,48 @@
             }
         },
         {
+            "name": "ddf--datapoints--freedix_fh--by--country--time",
+            "path": "ddf--datapoints--freedix_fh--by--country--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "freedix_fh"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--freedstatus_fh--by--country--time",
+            "path": "ddf--datapoints--freedstatus_fh--by--country--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "freedstatus_fh"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--freligion_idea--by--country--time",
             "path": "ddf--datapoints--freligion_idea--by--country--time.csv",
             "schema": {
@@ -727,6 +790,27 @@
                     },
                     {
                         "name": "pisec_idea"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--polrights_fh--by--country--time",
+            "path": "ddf--datapoints--polrights_fh--by--country--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "polrights_fh"
                     }
                 ],
                 "primaryKey": [
@@ -2259,6 +2343,26 @@
                     "country",
                     "time"
                 ],
+                "value": "cliberities_fh",
+                "resources": [
+                    "ddf--datapoints--cliberities_fh--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "cliberities_fh",
+                "resources": [
+                    "ddf--datapoints--cliberities_fh--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
                 "value": "cliberties_idea",
                 "resources": [
                     "ddf--datapoints--cliberties_idea--by--country--time"
@@ -2439,6 +2543,46 @@
                     "country",
                     "time"
                 ],
+                "value": "freedix_fh",
+                "resources": [
+                    "ddf--datapoints--freedix_fh--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "freedix_fh",
+                "resources": [
+                    "ddf--datapoints--freedix_fh--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "freedstatus_fh",
+                "resources": [
+                    "ddf--datapoints--freedstatus_fh--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "freedstatus_fh",
+                "resources": [
+                    "ddf--datapoints--freedstatus_fh--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
                 "value": "freligion_idea",
                 "resources": [
                     "ddf--datapoints--freligion_idea--by--country--time"
@@ -2612,6 +2756,26 @@
                 "value": "pisec_idea",
                 "resources": [
                     "ddf--datapoints--pisec_idea--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "polrights_fh",
+                "resources": [
+                    "ddf--datapoints--polrights_fh--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "polrights_fh",
+                "resources": [
+                    "ddf--datapoints--polrights_fh--by--country--time"
                 ]
             },
             {
