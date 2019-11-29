@@ -7,7 +7,7 @@
     "description": "",
     "author": "",
     "license": "",
-    "created": "2019-11-28T16:24:17.361426+00:00",
+    "created": "2019-11-29T05:56:45.074376+00:00",
     "resources": [
         {
             "name": "ddf--concepts",
@@ -160,6 +160,27 @@
                     },
                     {
                         "name": "c_civsocpart_idea"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--c_demox_eiu--by--country--time",
+            "path": "ddf--datapoints--c_demox_eiu--by--country--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "c_demox_eiu"
                     }
                 ],
                 "primaryKey": [
@@ -337,6 +358,27 @@
             }
         },
         {
+            "name": "ddf--datapoints--civlibx_eiu--by--country--time",
+            "path": "ddf--datapoints--civlibx_eiu--by--country--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "civlibx_eiu"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--civsocpart_idea--by--country--time",
             "path": "ddf--datapoints--civsocpart_idea--by--country--time.csv",
             "schema": {
@@ -400,6 +442,27 @@
             }
         },
         {
+            "name": "ddf--datapoints--demox_eiu--by--country--time",
+            "path": "ddf--datapoints--demox_eiu--by--country--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "demox_eiu"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--dirdemo_idea--by--country--time",
             "path": "ddf--datapoints--dirdemo_idea--by--country--time.csv",
             "schema": {
@@ -454,6 +517,27 @@
                     },
                     {
                         "name": "elecparti_idea"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--electoplx_eiu--by--country--time",
+            "path": "ddf--datapoints--electoplx_eiu--by--country--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "electoplx_eiu"
                     }
                 ],
                 "primaryKey": [
@@ -673,6 +757,27 @@
             }
         },
         {
+            "name": "ddf--datapoints--gvtx_eiu--by--country--time",
+            "path": "ddf--datapoints--gvtx_eiu--by--country--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "gvtx_eiu"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--impadmin_idea--by--country--time",
             "path": "ddf--datapoints--impadmin_idea--by--country--time.csv",
             "schema": {
@@ -790,6 +895,48 @@
                     },
                     {
                         "name": "pisec_idea"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--polcultx_eiu--by--country--time",
+            "path": "ddf--datapoints--polcultx_eiu--by--country--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "polcultx_eiu"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--polpartix_eiu--by--country--time",
+            "path": "ddf--datapoints--polpartix_eiu--by--country--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "polpartix_eiu"
                     }
                 ],
                 "primaryKey": [
@@ -2163,6 +2310,26 @@
                     "country",
                     "time"
                 ],
+                "value": "c_demox_eiu",
+                "resources": [
+                    "ddf--datapoints--c_demox_eiu--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "c_demox_eiu",
+                "resources": [
+                    "ddf--datapoints--c_demox_eiu--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
                 "value": "c_dirdemo_idea",
                 "resources": [
                     "ddf--datapoints--c_dirdemo_idea--by--country--time"
@@ -2323,6 +2490,26 @@
                     "country",
                     "time"
                 ],
+                "value": "civlibx_eiu",
+                "resources": [
+                    "ddf--datapoints--civlibx_eiu--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "civlibx_eiu",
+                "resources": [
+                    "ddf--datapoints--civlibx_eiu--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
                 "value": "civsocpart_idea",
                 "resources": [
                     "ddf--datapoints--civsocpart_idea--by--country--time"
@@ -2383,6 +2570,26 @@
                     "country",
                     "time"
                 ],
+                "value": "demox_eiu",
+                "resources": [
+                    "ddf--datapoints--demox_eiu--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "demox_eiu",
+                "resources": [
+                    "ddf--datapoints--demox_eiu--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
                 "value": "dirdemo_idea",
                 "resources": [
                     "ddf--datapoints--dirdemo_idea--by--country--time"
@@ -2436,6 +2643,26 @@
                 "value": "elecparti_idea",
                 "resources": [
                     "ddf--datapoints--elecparti_idea--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "electoplx_eiu",
+                "resources": [
+                    "ddf--datapoints--electoplx_eiu--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "electoplx_eiu",
+                "resources": [
+                    "ddf--datapoints--electoplx_eiu--by--country--time"
                 ]
             },
             {
@@ -2643,6 +2870,26 @@
                     "country",
                     "time"
                 ],
+                "value": "gvtx_eiu",
+                "resources": [
+                    "ddf--datapoints--gvtx_eiu--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "gvtx_eiu",
+                "resources": [
+                    "ddf--datapoints--gvtx_eiu--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
                 "value": "impadmin_idea",
                 "resources": [
                     "ddf--datapoints--impadmin_idea--by--country--time"
@@ -2756,6 +3003,46 @@
                 "value": "pisec_idea",
                 "resources": [
                     "ddf--datapoints--pisec_idea--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "polcultx_eiu",
+                "resources": [
+                    "ddf--datapoints--polcultx_eiu--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "polcultx_eiu",
+                "resources": [
+                    "ddf--datapoints--polcultx_eiu--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "polpartix_eiu",
+                "resources": [
+                    "ddf--datapoints--polpartix_eiu--by--country--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "polpartix_eiu",
+                "resources": [
+                    "ddf--datapoints--polpartix_eiu--by--country--time"
                 ]
             },
             {
