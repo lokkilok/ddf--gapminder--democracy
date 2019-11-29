@@ -73,7 +73,7 @@ def parse_dimension_pairs(dimensions):
 def serve_datapoints(datapoints, concept_map, csv_dict):
 
     # translate plural form to singal form
-    translate_dict = {'countries': 'country', 'world_4regions': 'world_4region'}
+    translate_dict = {'countries': 'country', 'world_4regions': 'world_4region', 'regions': 'world_4region'}
 
     def get_dataframe(docid, sheet_name, dimension_pairs, concept_name, copy=True):
         df = csv_dict[docid][sheet_name]
