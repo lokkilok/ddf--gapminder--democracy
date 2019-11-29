@@ -1,11 +1,41 @@
-# Dataset with democracy related indicators
+# Dataset with freedom and democracy related indicators
 
-This dataset includes indictors related to the state of democraticy around the world.
-The data originates from IDEA, and was harmonized to use the Gapminder geographic entities.
-The data from IDEA was used to compute rankings and indices to facilitate visualizations.
+This dataset includes indictors related to the state of freedom and democracy around the world.
 
-## Indicators
+## Sources
 
+### IDEA
+
+Gapminder has imported democracy data from [Global State of Democracy Indices(GSoD)](https://www.idea.int/gsod-indices/dataset-resources), Version 3 produced by International IDEA. International IDEA’s GSoD Indices V3,2019 provide data for all the independent countries in the world with a population of at least one million people and cover data on 158 countries for the period 1975–2017.The GSoD data set contains five attributes which are: i. Representative Government, ii.Fundamental Rights, iii.Checks on Government, iv.Impartial Administration, v.Participatory Engagement;16 subattributes and an additional five subcomponents of civil liberties and three subcomponents of social rights and equality, aggregated from 97 indicators which were collected from 12 different data sets.Four different types of sources were used to collect data for these data sets: 
+
+1. Expert surveys (ES), for which country experts generate data based on their assessment of the situation regarding particular issues in a given country;
+2. Standards-based in-house coding (IC), which is used by researchers to generate data based on an evaluative assessment of country-specific information collected through desk research from various reports, academic publications, reference works or news sources;
+3. Observational data (OD) on features that are directly observable and do not need the interpretation of experts or researchers, such as infant mortality rates or the representation of women in parliament; and
+4. Composite measures (CM), which generate data based on a number of variables from different existing data sets rather than on original data collection. 
+
+GSoD indices have been aggregated using mainly item response theory modelling and Bayesian factor analysis. In few cases, the aggregation is calculated by taking the mean or multiplying various indicators.Separate GSoD Indices are constructed for each attribute and subattribute with an exception for the fifth attribute, participatory engagement for which there are no obvious ways to aggregate its subattributes as it is conceptually and empirically multidimensional.  Indices were scaled to range from 0 to 1; where 0 represtents the lowest score and 1 the highest score. Gapminder has converted the  the indices to a scale of 0 to 100 to  make it easier to communicate as apercentage.We presented  28 democracy indices (from 4 attributes, 16 subattributes and 8 subcomponents)  which was aggregated from 97 indicators for countries /territories by year. We  have also calculated the annual change of the four attributes and the annual change of the  four subattributes of the fifth attribute. In addition, we have calculated democracy indices for four regions, defined by gapminder ( gaminder has divided the world into  4 regions with roughly equal areas) and for world. Regional and world indices are averages but  they are not weighted by the population (this is the same methods that was used by International in calculating regional and gloabal GSoD indices). All the calculations can be followed in the next sheets starting from the far right sheet which has the input data to the sheets in the left with the output.
+
+### Freedom House
+
+Gapminder has imported freedom data from [Freedom in the World of Freedom House](https://freedomhouse.org/report-types/freedom-world). Freedom in the World is an annual global report on political rights and civil liberties, composed of numerical ratings and descriptive texts for each country and a select group of territories.Freedom in the World assesses the real-world rights and freedoms enjoyed by individuals, rather than governments or government performance per se. Freedom in the World is published each year since 1973 by a team of in-house and external analysts and expert advisers from the academic, think tank, and human rights communities. Sources of FIW include on-the-ground research, consultations with local contacts, and information from news articles, nongovernmental organizations, governments. Freedom in the World uses a three-tiered system consisting of scores, ratings, and status. A country or territory is awarded 0 to 4 points for each of 10 political rights indicators and 15 civil liberties indicators, which take the form of questions; a score of 0 represents the smallest degree of freedom and 4 the greatest degree of freedom. The political rights questions are grouped into three subcategories: Electoral Process , Political Pluralism and Participation, and Functioning of Government. The civil liberties questions are grouped into four subcategories: Freedom of Expression and Belief, Associational and Organizational Rights, Rule of Law, and Personal Autonomy and Individual Rights (the questions are listed  under each indicator). The political rights section also contains an additional discretionary question. For the discretionary question, a score of 1 to 4 may be subtracted, as applicable (the worse the situation, the more points may be subtracted). The highest overall score that can be awarded for political rights is 40 and for civil liberties is 60. After, a country or territory is assigned two ratings-one for political rights and one for civil liberties based on its total scores for the political rights questions ( i.e a score of 36-40 is given a ranting of 1, 30-35=2, 24-29=3, 18-23=4,12-17=5,6-11=6,0-5=7)and civil liberties questions (i.e a score of 53-60 is given a rating of 1, 44-52=2,35-43=3, 26-34=4,17-25=5, 8-16=6, 0-7=7). Each rating  ranges from 1 to 7, with 1 representing the greatest degree of freedom and 7 the smallest degree of freedom. The freedom status for a country/ territory is determined by the so called Freedom Rating which is  the average of a country or territory’s political rights and civil liberties ratings. Until 2003, a country/ territory whose Freedom Rating was between 1.0 to 2.5, a country/territory was designated as Free,  between 3.0 and  5.5, Partly Free and between 5.5 and 7.0, Not Free. After 2003 upto now, a country/ territory whose Freedom Rating was between 1.0 to 2.5, was designated as Free,  between 3.0 and  5.0, Partly Free and between 5.5 and 7.0, Not Free. We presented the data for countries and territories from 1972 to 2018.
+
+__Notes__:The data of 1981 are for the period jan-1981 to Aug1982. In 1972, (i.e in the 1973 edition) South Africa was rated as White and Black separately, we calculated the average of combined black and white's political rights and civil liberities rights and determined the freedom status for south Africa as one entry. The ratings for Germany before 1990 (Germany unification) are the average of west and east Germany ratings. The ratings of Vietnman before 1976 are the average ratings of Vietnamn and north Vietnam and finally the ratings of Yemen before  1990 are the average ratings of South and North Yemen
+
+### Economist Intelligence Unit
+
+The [Democracy Index](https://www.eiu.com/topic/democracy-index) captures the quality of democracy in just one number. It's calculated by the Economist Intelligence Unit(EIU) on a yearly basis, as a scale from 0 to 10, which Gapminder has converted to a scale form 0 to 100, to make it easier to communicate as a percentage. The EIU calculates this number by combining 60 aspects of democracy, based on estimates from experts in different fields, as well as data from mutliple sources such as the World Values Survey. The 60 indicators are divided into five subindexes, which are:
+1. Electoral pluralism index;
+2. Government index;
+3. Political participation index;
+4. Political culture index;
+5. Civil liberty index.
+
+The list of 60 indicators are listed for each of the sub-indexes below, as they appear at the end of each yearly report, like in the 2017 edition here:
+https://pages.eiu.com/rs/753-RIQ-438/images/Democracy_Index_2017.pdf.
+
+The Economist has created a visualization of the changing democracy index of all countries here: https://gapm.io/xdiviz18
+
+Data for 2007 and 2009 are not available from EIU, because they didn't create a yearly reports for these years. To make smoother line charts Gapminder has generated numbers for these two years by simply drawing a line between the years 2006 and 2008, and 2008 and 2010.
 
 ## ETL
 
